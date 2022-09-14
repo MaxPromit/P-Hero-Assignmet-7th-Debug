@@ -122,7 +122,8 @@ const start = () => {
 
 
       clearInterval(startCountdown);
-      startTime = new Date().getTime();
+    startTime = new Date().getTime();
+      
     }
     count--;
   }, 1000);
@@ -138,7 +139,8 @@ displayHistory();
 setInterval(() => {
   const currentTime = new Date().getTime();
   const timeSpent = (currentTime - startTime) / 1000;
+  const intTime = parseInt(timeSpent);
 
 
-  document.getElementById("show-time").innerHTML = `${startTime ? timeSpent : 0} seconds`;
+  document.getElementById("show-time").innerHTML = `${startTime ? intTime : 0} seconds`;
 }, 1000);
