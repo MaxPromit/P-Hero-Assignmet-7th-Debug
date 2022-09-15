@@ -183,9 +183,9 @@ button {
   position: fixed;
   top: 0;
 }
-.col{
+/* .col{
   width: 33%;
-}
+} */
 
 
 @media only screen and (max-width: 600px) {
@@ -196,7 +196,7 @@ button {
   .card {
     flex-direction: column;
   }
-  .col{
+  /* .col{
     width: 100%;
-  }
+  } */
 }
